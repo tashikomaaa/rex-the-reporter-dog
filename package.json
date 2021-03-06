@@ -1,6 +1,6 @@
 {
   "name": "rex-the-reporter-dog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "reporter for react MicroFrontEnd",
   "main": "index.js",
   "scripts": {
