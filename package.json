@@ -1,6 +1,6 @@
 {
   "name": "rex-the-reporter-dog",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "reporter for react MicroFrontEnd",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
     "url": "git+https://github.com/tashikomaaa/rex-the-reporter-dog.git"
   },
   "author": "corvus",
+  "keyword": "rex",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tashikomaaa/rex-the-reporter-dog/issues"
