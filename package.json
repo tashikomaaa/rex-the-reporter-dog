@@ -1,6 +1,6 @@
 {
   "name": "rex-the-reporter-dog",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "reporter for react MicroFrontEnd",
   "main": "bin/index.js",
   "scripts": {
@@ -71,6 +71,14 @@
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "peerDependenciesMeta": {
+    "webpack-cli": {
+      "optional": true
+    },
+    "webpack-command": {
+      "optional": true
+    }
   },
   "config": {
     "commitizen": {
