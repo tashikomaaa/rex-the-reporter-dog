@@ -1,15 +1,21 @@
 {
   "name": "rex-the-reporter-dog",
-  "version": "1.1.20",
+  "version": "1.2.1",
   "description": "reporter for react MicroFrontEnd",
-  "main": "index.tsx",
+  "main": "dist/index.tsx",
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "clean": "rimraf coverage dist",
+    "cz": "git-cz",
+    "rebuild": "npm run clean && npm run build",
     "test": "jest",
     "test:changed": "npm run test -- --changedSince HEAD",
     "test:coverage": "npm run test -- --coverage",
-    "build": "tsc"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "watch": "npm run build -- --watch"
   },
   "repository": {
     "type": "git",
@@ -77,16 +83,8 @@
     "Rex": "./bin/index.js"
   },
   "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "peerDependenciesMeta": {
-    "webpack-cli": {
-      "optional": true
-    },
-    "webpack-command": {
-      "optional": true
-    }
+    "react": ">=16.9",
+    "react-dom": ">=16.9"
   },
   "config": {
     "commitizen": {
