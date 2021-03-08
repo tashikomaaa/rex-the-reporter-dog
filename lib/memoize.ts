@@ -4,7 +4,8 @@
  * @param {Function} func Function to memoize
  * @returns {Function} Memoized version of func.
  */
- const memoize = func => {
+ // eslint-disable-next-line @typescript-eslint/ban-types
+ const memoize = (func: Function): Function => {
     const cache = {};
     return key => {
       if (key in cache == false) {
