@@ -1,4 +1,4 @@
-import createLoadRemoteModule from "@paciolan/remote-module-loader";
+import { createLoadRemoteModule } from "./createLoadModule";
 import { RemoteComponent } from "./createRemoteComponent";
 
 interface FetchRemoteComponentOptions {

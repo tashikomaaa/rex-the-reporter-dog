@@ -19,7 +19,6 @@
   "homepage": "https://github.com/tashikomaaa/rex-the-reporter-dog#readme",
   "dependencies": {
     "@hapi/hapi": "^18.3.2",
-    "@paciolan/remote-module-loader": "^2.6.2",
     "axios": "^0.19.2",
     "boxen": "^4.0.0",
     "chalk": "^2.4.2",
@@ -43,7 +42,6 @@
     "@babel/preset-typescript": "^7.12.7",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@paciolan/eslint-config-react": "^1.0.4",
     "@testing-library/react-hooks": "^3.4.1",
     "@types/jest": "^26.0.14",
     "@typescript-eslint/eslint-plugin": "^4.12.0",
