@@ -1,8 +1,8 @@
 {
   "name": "rex-the-reporter-dog",
-  "version": "1.1.17",
+  "version": "1.1.18",
   "description": "reporter for react MicroFrontEnd",
-  "main": "bin/index.js",
+  "main": "dist/index.tsx",
   "type": "module",
   "scripts": {
     "lint": "eslint .",
