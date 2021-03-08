@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "@babel/env",
+    "@babel/react",
+    "@babel/typescript"
+  ],
+  "env": {
+    "test": {
+      "sourceMaps": true,
+      "retainLines": true
+    }
+  }
+}
