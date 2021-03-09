@@ -1,6 +1,6 @@
 {
   "name": "rex-the-reporter-dog",
-  "version": "0.0.0-semantic-versioning",
+  "version": "1.2.2",
   "description": "Dynamically load a React Component from a URL",
   "main": "dist/index.js",
   "author": "Corvus",
