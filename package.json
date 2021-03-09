@@ -1,9 +1,20 @@
 {
   "name": "rex-the-reporter-dog",
-  "version": "1.2.1",
-  "description": "reporter for react MicroFrontEnd",
-  "main": "dist/index.tsx",
-  "type": "module",
+  "version": "0.0.0-semantic-versioning",
+  "description": "Dynamically load a React Component from a URL",
+  "main": "dist/index.js",
+  "author": "Corvus",
+  "license": "MIT",
+  "release": {
+    "branch": "master",
+    "repositoryUrl": "git+https://github.com/tashikomaaa/rex-the-reporter-dog.git",
+    "tagFormat": "${version}",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm"
+    ]
+  },
   "scripts": {
     "prebuild": "npm run clean",
     "build": "tsc",
@@ -17,35 +28,8 @@
     "lint:fix": "eslint . --fix",
     "watch": "npm run build -- --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tashikomaaa/rex-the-reporter-dog.git"
-  },
-  "author": "corvus",
-  "keyword": "rex",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tashikomaaa/rex-the-reporter-dog/issues"
-  },
-  "homepage": "https://github.com/tashikomaaa/rex-the-reporter-dog#readme",
   "dependencies": {
-    "@hapi/hapi": "^18.3.2",
-    "@paciolan/remote-module-loader": "^2.6.2",
-    "axios": "^0.19.2",
-    "boxen": "^4.0.0",
-    "chalk": "^2.4.2",
-    "clui": "^0.3.6",
-    "dotenv": "^8.0.0",
-    "fetch": "^1.1.0",
-    "figlet": "^1.5.0",
-    "fs": "0.0.1-security",
-    "fs-extra": "^9.1.0",
-    "inquirer": "^8.0.0",
-    "node-fetch": "^2.6.1",
-    "open": "^6.3.0",
-    "react": "^17.0.1",
-    "uuid": "^3.3.3",
-    "yargs": "^13.2.4"
+    "@paciolan/remote-module-loader": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -56,7 +40,6 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@paciolan/eslint-config-react": "^1.0.4",
     "@testing-library/react-hooks": "^3.4.1",
-    "@types/inquirer": "^7.3.1",
     "@types/jest": "^26.0.14",
     "@typescript-eslint/eslint-plugin": "^4.12.0",
     "@typescript-eslint/parser": "^4.12.0",
@@ -73,18 +56,22 @@
     "husky": "^4.3.0",
     "jest": "^26.4.2",
     "prettier": "^2.1.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "regenerator-runtime": "^0.13.7",
     "rimraf": "^3.0.2",
     "typescript": "^4.1.3"
   },
-  "bin": {
-    "Rex": "./bin/index.js"
-  },
   "peerDependencies": {
     "react": ">=16.9",
     "react-dom": ">=16.9"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint && npm run test:changed",
+      "pre-push": "npm run build && npm run test:coverage"
+    }
   },
   "config": {
     "commitizen": {

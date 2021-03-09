@@ -20,7 +20,7 @@
   "compileOnSave": true,
   "include": [
     "./src/**/*.ts",
-    "index.tsx",
+    "src/index.tsx",
     "src/createRemoteComponent.tsx",
     "src/models/index.tsx",
     "src/__tests__/createRemoteComponent.test.tsx"
