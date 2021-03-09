@@ -1,3 +1,4 @@
+/* eslint-disable */
 import memoize from "./memoize";
 import xmlHttpRequestFetcher from "./xmlHttpRequestFetcher/index";
 import nodeFetcher from "./nodeFetcher";

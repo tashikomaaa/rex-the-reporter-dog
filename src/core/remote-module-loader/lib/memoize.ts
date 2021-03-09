@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * Memoizes a 1-arity function
  *

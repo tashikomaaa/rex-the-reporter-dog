@@ -46,7 +46,7 @@ export const createRemoteComponent = (
           "border: 2px solid black ; font-size: 11px ; line-height: 11px ; "
       );
       console.log("-- bones :");
-      console.log(props.url);
+      console.log(url);
     }
 
     if (loading) {
