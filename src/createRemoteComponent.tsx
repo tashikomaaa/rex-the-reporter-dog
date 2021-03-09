@@ -25,8 +25,7 @@ export interface RemoteComponent {
 }
 
 export const createRemoteComponent = (
-  props?: Record<string, unknown>,
-  dev?: boolean
+  props?: Record<string, unknown>
 ): RemoteComponent => {
   const useRemoteComponent = createUseRemoteComponent(props);
 
