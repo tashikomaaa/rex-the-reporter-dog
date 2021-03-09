@@ -18,7 +18,7 @@ export const createUseRemoteComponent = (
     });
 
     useEffect(() => {
-      let update = setState;
+      const update = setState;
       update({ loading: true, err: undefined, component: undefined });
       loadRemoteModule(url)
         .then(module =>
@@ -26,12 +26,7 @@ export const createUseRemoteComponent = (
         )
         .catch(err => update({ loading: false, err, component: undefined }));
 
-      return () => {
-        // invalidate update function for stale closures
-        update = () => {
-          // this function is left intentionally blank
-        };
-      };
+      return null;
     }, [url]);
 
     return [loading, err, component];
