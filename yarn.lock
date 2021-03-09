@@ -1293,6 +1293,18 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
+"@paciolan/eslint-config-react@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@paciolan/eslint-config-react/-/eslint-config-react-1.0.4.tgz#f610203fb52bcf31e4ae5bb72869849ecb269531"
+  integrity sha512-CWY0M7b73Oqzz9N3LOOQfQOT4dg4m8HxRiCio1yXapqEb3QTT4a5247PCiyQ3sYktQJsqLFrqCSAFCqb0YjC0w==
+  dependencies:
+    "@paciolan/eslint-config" "^1.4.0"
+
+"@paciolan/eslint-config@^1.4.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@paciolan/eslint-config/-/eslint-config-1.5.0.tgz#1e7a8faf9d416082623174387673ea86ec78fd9a"
+  integrity sha512-yCMwYYtULaqr06TDpKIWstm39F2EpWYRB+VI09uYSVbjOJo+NE+zxLqBFT96fqcMPDT5GPDVEfyu13YgFv/UEA==
+
 "@paciolan/remote-module-loader@^2.6.2":
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/@paciolan/remote-module-loader/-/remote-module-loader-2.6.2.tgz#27177a73810ab78d1cbc4ed8ba7f0389af80d5ef"
