@@ -1,6 +1,6 @@
 # rex-the-reporter-dog
 
-![alt text]()
+![alt text](https://github.com/tashikomaaa/rex-the-reporter-dog/blob/main/src/media/logo.png)
 
 # Config
 
