@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import memoize from "./memoize";
 import xmlHttpRequestFetcher from "./xmlHttpRequestFetcher/index";
 import nodeFetcher from "./nodeFetcher";
@@ -14,6 +15,7 @@ const defaultRequires = name => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface CreateLoadRemoteModuleOptions {
   requires: any;
   fetcher: any;

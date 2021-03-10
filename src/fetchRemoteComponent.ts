@@ -1,3 +1,4 @@
+/* eslint-disable */
 import createLoadRemoteModule from "@paciolan/remote-module-loader";
 import { RemoteComponent } from "./createRemoteComponent";
 

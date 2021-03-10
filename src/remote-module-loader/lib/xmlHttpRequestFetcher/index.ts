@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { DONE } from "./readyState";
 import { OK } from "./status";
 import { Fetcher } from "../../models";

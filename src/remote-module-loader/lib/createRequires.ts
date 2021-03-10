@@ -1,3 +1,4 @@
+/* eslint-disable */
 interface Requires {
   (name: string): any;
 }

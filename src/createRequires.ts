@@ -1,3 +1,4 @@
+/* eslint-disable */
 export interface DependencyFunction {
   (name: string): unknown;
 }

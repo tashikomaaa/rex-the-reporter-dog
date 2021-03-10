@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as http from "http";
 import * as https from "https";
 import { Fetcher } from "../models";
