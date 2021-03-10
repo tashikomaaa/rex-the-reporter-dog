@@ -1,5 +1,5 @@
 /* eslint-disable */
-import createLoadRemoteModule from "@paciolan/remote-module-loader";
+import createLoadRemoteModule from "./remote-module-loader";
 import { RemoteComponent } from "./createRemoteComponent";
 
 interface FetchRemoteComponentOptions {
